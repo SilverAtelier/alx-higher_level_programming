@@ -1,12 +1,7 @@
 #!/usr/bin/bash
 
 
-url=$1
-
-size=$(curl -s -o /dev/null -w "%{size_download}" $url)
-
-echo $size 
-
+curl -sI "$1" | grep 'Content-Length:' | cut -f2 -d' '
 
 
 
