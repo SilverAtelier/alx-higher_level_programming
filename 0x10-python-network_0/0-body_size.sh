@@ -1,10 +1,5 @@
-#!/bin/bash
-
-#!/bin/bash
-
-
-
-curl -s -o /dev/null -w "%{size_download}" $1)
+#!/usr/bin/bash
+curl -s -o /dev/null -w "%{size_download}" $1
 
 
 
