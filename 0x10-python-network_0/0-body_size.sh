@@ -1,2 +1,3 @@
 #!/bin/bash
-curl -s "$1"| wc -c
+url=$1
+curl -s $url | wc -c
